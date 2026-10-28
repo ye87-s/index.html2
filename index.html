@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Descubre Mezcal Los Volcanes: una propuesta con identidad mexicana. Consulta información de producto y oportunidades comerciales.">
+<title>Mezcal Los Volcanes | Espíritu mexicano</title>
+<style>
+:root{--brown:#39291f;--ink:#30271f;--cream:#f2ece3;--paper:#fffdf9;--accent:#9a704d;--muted:#74675b;--line:#e8dfd3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+a{color:inherit}
+.topbar{background:var(--brown);color:#fff;text-align:center;padding:9px 12px;font-size:11px;letter-spacing:1.4px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 5%;border-bottom:1px solid var(--line);gap:12px}
+.brand{font-family:Georgia,serif;font-size:20px;letter-spacing:1px;font-weight:bold}
+.brand small{display:block;font:9px Arial,sans-serif;letter-spacing:3px;margin-top:3px}
+.links{display:flex;gap:17px;font-size:12px}
+.links a{text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:410px;background:var(--cream)}
+.hero-copy{padding:48px 8% 40px 11%;align-self:center}
+.eyebrow{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#8c603e;font-weight:bold}
+h1{font-family:Georgia,serif;font-size:clamp(34px,5vw,57px);line-height:1.05;font-weight:normal;margin:17px 0}
+.hero-copy p{font-size:14px;color:#66574a;max-width:390px}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.btn{display:inline-block;text-decoration:none!important;padding:13px 18px;font-size:11px;letter-spacing:1px;font-weight:bold;border:1px solid #4a3526;background:#4a3526;color:#fff!important;cursor:pointer;text-align:center}
+.btn.alt{background:transparent;color:#4a3526!important}
+.hero-art{display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;min-height:350px;background:radial-gradient(ellipse at 50% 55%,#d6c3a9 0%,#b5a087 35%,#8b715a 100%)}
+.sun{position:absolute;width:255px;height:255px;border-radius:50%;background:#e8d9c4;opacity:.65}
+.bottle{height:260px;width:112px;position:relative;z-index:1;filter:drop-shadow(14px 16px 10px #493a2e66)}
+.neck{position:absolute;top:0;left:39px;width:34px;height:68px;background:linear-gradient(90deg,#2e3524,#667047,#343b29);border-radius:4px 4px 0 0;border-top:10px solid #3a2b20}
+.bottle-body{position:absolute;top:54px;left:9px;width:94px;height:202px;border-radius:17px 17px 9px 9px;background:linear-gradient(90deg,#20251b,#586044 25%,#353c2b 65%,#1e241a);border:1px solid #27291e}
+.label-product{position:absolute;top:118px;left:16px;width:80px;height:91px;background:#e9ddc5;color:#483426;text-align:center;padding:10px 3px;border:1px solid #b7a184;font-family:Georgia,serif;display:flex;flex-direction:column;justify-content:center}
+.label-product strong{font-size:10px;line-height:1.3}
+.label-product span{font:7px Arial,sans-serif;letter-spacing:1px;margin-top:7px}
+.art-caption{position:absolute;bottom:15px;right:15px;color:#fff;font-size:9px;letter-spacing:1px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);padding:20px 5%;border-bottom:1px solid #e9e1d7;text-align:center;gap:10px}
+.trust strong{display:block;font-family:Georgia,serif;font-size:14px;font-weight:normal}
+.trust span{font-size:10px;color:#7a6a5c}
+section{padding:53px 7%}
+.section-title{text-align:center;max-width:650px;margin:0 auto 30px}
+h2{font:normal 32px Georgia,serif;margin:9px 0 12px}
+.muted{color:var(--muted);font-size:13px}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.benefit{padding:23px 18px;background:#f7f3ed;border:1px solid #e9dfd2}
+.number{font:24px Georgia,serif;color:var(--accent)}
+.benefit h3{font:normal 19px Georgia,serif;margin:12px 0 8px}
+.benefit p{font-size:12px;color:#716256}
+.spec{background:var(--brown);color:#fff}
+.spec .muted{color:#d7c9ba}
+.spec-grid{display:grid;grid-template-columns:repeat(2,1fr);max-width:720px;margin:auto;gap:0 35px}
+.spec-row{padding:13px 0;border-bottom:1px solid #665448;display:flex;justify-content:space-between;gap:12px;font-size:12px}
+.spec-row span:last-child{color:#e4c8a8;text-align:right}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.tile{min-height:180px;padding:24px;background:#eee4d6;display:flex;flex-direction:column;justify-content:flex-end}
+.tile:nth-child(2){background:#e3d4c1}
+.tile h3{font:normal 22px Georgia,serif;margin:5px 0}
+.tile p{font-size:12px;color:#68584b;margin:0}
+.faq{max-width:760px;margin:auto}
+details{border-bottom:1px solid #e4dbcf;padding:17px 0}
+summary{cursor:pointer;font-size:14px;font-weight:bold;list-style:none;display:flex;justify-content:space-between;gap:15px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-size:18px;color:var(--accent)}
+details[open] summary:after{content:"−"}
+details p{font-size:13px;color:var(--muted)}
+.conversion{text-align:center;background:var(--cream)}
+.conversion .actions{justify-content:center}
+.notice{font-size:11px;color:#8a7a6b;margin-top:16px}
+.pill{display:inline-block;border:1px solid #b6a18b;padding:4px 8px;font-size:9px;letter-spacing:1px;text-transform:uppercase;margin:0 4px 4px 0}
+footer{background:#241b15;color:#eee0d0;padding:30px 7%;font-size:11px}
+footer a{color:#eee0d0}
+.footgrid{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}
+footer hr{border:0;border-top:1px solid #59483b;margin:22px 0}
+:focus-visible{outline:3px solid #bd8e60;outline-offset:3px}
+@media(max-width:600px){
+ .nav{padding:14px 5%}.links{gap:9px;font-size:10px}.brand{font-size:16px}
+ .hero{grid-template-columns:1fr}.hero-copy{padding:38px 7%}.hero-art{min-height:320px}
+ .trust{padding:16px 3%;gap:5px}.trust strong{font-size:12px}.trust span{font-size:9px}
+ section{padding:40px 6%}.benefits{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr}h2{font-size:28px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="topbar">ESPÍRITU MEXICANO · DESCUBRE UNA NUEVA EXPERIENCIA</div>
+<header class="nav">
+  <a href="#inicio" style="text-decoration:none" aria-label="Mezcal Los Volcanes, inicio">
+    <div class="brand">MEZCAL <span style="color:#9b704d">LOS VOLCANES</span><small>RAÍZ · CARÁCTER · ORIGEN</small></div>
+  </a>
+  <nav class="links" aria-label="Navegación principal"><a href="#producto">Producto</a><a href="#origen">Nuestra esencia</a><a href="#faq">FAQ</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio" style="padding:0">
+  <div class="hero-copy">
+    <span class="eyebrow">Tradición mexicana · Mirada contemporánea</span>
+    <h1>El carácter de México, en cada encuentro.</h1>
+    <p>Descubre Mezcal Los Volcanes: una propuesta con identidad mexicana para quienes buscan explorar nuevos sabores, compartir experiencias y llevar su curiosidad más allá de las fronteras.</p>
+    <div style="margin-top:17px"><span class="pill">Origen mexicano</span><span class="pill">Experiencia por descubrir</span></div>
+    <div class="actions"><a class="btn" href="#contacto">CONSULTAR Y CONTACTAR ↗</a><a class="btn alt" href="#producto">DESCUBRIR EL PRODUCTO</a></div>
+    <div class="notice">Precio, presentación y disponibilidad: <strong>pendientes de confirmar</strong>.</div>
+  </div>
+  <div class="hero-art" role="img" aria-label="Ilustración conceptual de una botella de mezcal; no es fotografía del producto">
+    <div class="sun"></div><div class="bottle"><div class="neck"></div><div class="bottle-body"></div><div class="label-product"><strong>MEZCAL<br>LOS VOLCANES</strong><span>ESPÍRITU MEXICANO</span></div></div>
+    <div class="art-caption">ILUSTRACIÓN CONCEPTUAL · NO ES FOTO REAL</div>
+  </div>
+</section>
+<div class="trust"><div><strong>Identidad mexicana</strong><span>Una historia por conocer</span></div><div><strong>Una nueva generación</strong><span>Tradición con mirada actual</span></div><div><strong>Más allá de fronteras</strong><span>Potencial para nuevos mercados</span></div></div>
+<section id="origen">
+  <div class="section-title"><span class="eyebrow">Nuestra propuesta</span><h2>Una esencia con identidad propia</h2><p class="muted">Una marca que conecta la cultura del mezcal mexicano con consumidores curiosos y oportunidades de negocio. La historia, los procesos y el origen específicos de esta referencia están pendientes de documentación.</p></div>
+  <div class="benefits">
+    <article class="benefit"><div class="number">01</div><h3>Descubrir algo diferente</h3><p>Para consumidores que disfrutan explorar productos con personalidad y ampliar sus experiencias.</p></article>
+    <article class="benefit"><div class="number">02</div><h3>Compartir momentos</h3><p>Una propuesta para conversaciones, encuentros y ocasiones especiales, siempre con consumo responsable.</p></article>
+    <article class="benefit"><div class="number">03</div><h3>Mirar a nuevos mercados</h3><p>Una base para explorar distribución y colaboraciones comerciales, sujetas a disponibilidad y requisitos regulatorios.</p></article>
+  </div>
+</section>
+<section class="spec" id="producto">
+  <div class="section-title"><span class="eyebrow">Conoce el producto</span><h2>Los detalles importan</h2><p class="muted">Información inicial disponible y campos por confirmar antes de publicar la ficha comercial definitiva.</p></div>
+  <div class="spec-grid">
+    <div class="spec-row"><span>Marca</span><span>Mezcal Los Volcanes</span></div><div class="spec-row"><span>Categoría</span><span>Mezcal mexicano</span></div>
+    <div class="spec-row"><span>Origen específico</span><span>[PENDIENTE]</span></div><div class="spec-row"><span>Tipo de agave</span><span>[PENDIENTE]</span></div>
+    <div class="spec-row"><span>Volumen</span><span>[PENDIENTE]</span></div><div class="spec-row"><span>Graduación alcohólica</span><span>[PENDIENTE]</span></div>
+    <div class="spec-row"><span>Notas de cata</span><span>[PENDIENTE]</span></div><div class="spec-row"><span>Precio y stock</span><span>[PENDIENTE]</span></div>
+    <div class="spec-row"><span>Elaboración y certificaciones</span><span>[PENDIENTE]</span></div><div class="spec-row"><span>Envíos y devoluciones</span><span>[PENDIENTE]</span></div>
+  </div>
+  <p class="notice" style="text-align:center">Los atributos técnicos y las afirmaciones de elaboración artesanal deberán validarse con la ficha oficial del fabricante.</p>
+</section>
+<section>
+  <div class="section-title"><span class="eyebrow">La experiencia</span><h2>Una marca para descubrir</h2><p class="muted">Estos espacios están preparados para integrar fotografías auténticas y argumentos comerciales verificables.</p></div>
+  <div class="gallery">
+    <div class="tile"><span class="eyebrow">01 / Producto</span><h3>La botella, protagonista</h3><p>[PENDIENTE: fotografía real frontal, etiqueta legible y fondo limpio.]</p></div>
+    <div class="tile"><span class="eyebrow">02 / Origen</span><h3>La historia detrás del mezcal</h3><p>[PENDIENTE: imágenes autorizadas del origen, agave o proceso real.]</p></div>
+  </div>
+</section>
+<section id="faq" style="background:#faf7f2">
+  <div class="section-title"><span class="eyebrow">Resolvemos tus dudas</span><h2>Preguntas frecuentes</h2></div>
+  <div class="faq">
+    <details><summary>¿Qué es Mezcal Los Volcanes?</summary><p>Es la marca presentada en esta ficha como una propuesta de mezcal mexicano. La variedad, el origen específico y los detalles certificados del producto están pendientes de confirmar.</p></details>
+    <details><summary>¿Qué tipo de agave se utiliza?</summary><p>Este dato no se ha facilitado. Se confirmará con la ficha técnica oficial antes de publicar una afirmación sobre el agave.</p></details>
+    <details><summary>¿Cuánto cuesta la botella?</summary><p>El precio aún no está disponible. Contacta con la marca para consultar precio, formatos y condiciones de compra.</p></details>
+    <details><summary>¿Se puede comprar online?</summary><p>La compra directa y la disponibilidad de inventario están pendientes de confirmar. Por ahora, puedes solicitar información mediante el contacto indicado.</p></details>
+    <details><summary>¿Realizáis envíos internacionales?</summary><p>Las zonas de envío, los costes y los requisitos de importación deben confirmarse según el destino y la normativa aplicable.</p></details>
+    <details><summary>¿Ofrecéis acuerdos de distribución?</summary><p>La página contempla consultas comerciales. Las condiciones, los volúmenes mínimos y la disponibilidad para distribución se deben acordar directamente con la marca.</p></details>
+  </div>
+</section>
+<section class="conversion" id="contacto">
+  <span class="eyebrow">Hablemos</span><h2>¿Quieres conocer más?</h2><p class="muted">Consulta la disponibilidad del producto o plantea una oportunidad de colaboración comercial.</p>
+  <div class="actions"><a class="btn" href="tel:+3460789390">LLAMAR A LA MARCA</a><a class="btn alt" href="mailto:yeset@gmail.com?subject=Consulta%20Mezcal%20Los%20Volcanes">ESCRIBIR POR EMAIL</a><a class="btn alt" href="https://maps.app.goo.gl/JTBoQfjfeq7gNfbt5" target="_blank" rel="noopener noreferrer">VER UBICACIÓN ↗</a></div>
+  <p class="notice">Teléfono facilitado: +34 60789390 · Email facilitado: yeset@gmail.com</p><p class="notice">Compra directa: pendiente de activar tras confirmar precio, inventario y condiciones de venta.</p>
+</section>
+</main>
+<footer>
+  <div class="footgrid"><div><div class="brand">MEZCAL LOS VOLCANES</div><p>Identidad mexicana. Una propuesta por descubrir.</p></div><div><a href="#producto">Producto</a> · <a href="#faq">Preguntas frecuentes</a> · <a href="#contacto">Contacto</a><p><a href="https://ojodetigremezcal.com/es/inicio/" target="_blank" rel="noopener noreferrer">Web de referencia facilitada ↗</a></p></div></div>
+  <hr><p>© 2026 Mezcal Los Volcanes · Datos comerciales pendientes de validación.</p>
+  <p>Privacidad y RGPD: [PENDIENTE: política de privacidad, responsable del tratamiento y mecanismo de consentimiento].</p>
+  <p>Venta exclusiva a personas mayores de edad. Disfruta con responsabilidad.</p>
+</footer>
+</body>
+</html>
